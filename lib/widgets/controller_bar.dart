@@ -87,9 +87,7 @@ class _ControllerBarState extends State<ControllerBar> {
                     value: switchState,
                     onChanged: (bool value) {
                       if (widget.manualState) {
-                        setState(() {
-                          ref.set(value);
-                        });
+                        ref.set(value);
                       }
                     },
                     activeColor: widget.manualState
